@@ -1,0 +1,40 @@
+.contact-div{
+    display: flex;
+    flex-direction: row;
+    margin-top: 80px;
+    
+}
+.empty{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.contact-div2{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+}
+.map{
+    flex-direction: 1/2;
+    margin-right: 100px;
+}
+.map-form{
+    flex-direction: 1/2;
+    margin-left: 150px;
+}
+.form-div{
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.input-div{
+    margin-bottom: 10px;
+}
+.text-area{
+    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.submit-button{
+    margin-top: 10px;
+
+}

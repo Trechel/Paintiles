@@ -1,0 +1,162 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=SUSE:wght@100..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../stylesheet/style.css">
+    <link rel="stylesheet" href="../stylesheet/contact.css">
+
+</head>
+
+<body>
+
+    <div class="Header">
+        <div class="Logo-Div"><img src="../images/logo.png" alt="Car Logo" class="logo"></div>
+        <div class="Car-Div"><img src="../images/car.jpeg" alt="Company Logo" class="car-logo"></div>
+        <div class="nhbrc"><img src="../images/nhbrc.jpeg" alt="Nhbrc Logo" class="nhbrc-logo"></div>
+        <div class="Car1-Div"><img src="../images/car1.png" alt="Company Logo" class="car-logo2"></div>
+        <div class="Search"><input type="text" class="Search-Input" placeholder="Quick Search">
+            <button class="search-button">Search</button>
+        </div>
+
+
+    </div>
+    <div class="Below-Header">
+        <a href="../ui/index.html" class="Home-button"> Home</a>
+        <a href="../ui/about.html" class="Home-button"> About Us</a>
+        <a href="../ui/services.html" class="Home-button">Services</a>
+        <a href="../ui/online.html" class="Home-button">Online Quotation</a>
+        <a href="../ui/contact.html" class="Home-button"> Contact Us</a>
+
+
+    </div>
+
+    <div class="contact-div">
+        <div class="empty"></div>
+        <div class="contact-div2">
+            <div class="map">
+
+
+
+                <div id="googleMap" style="width:400px;height:400px;"></div>
+
+                <script>
+                    function myMap() {
+                        var mapProp = {
+                            center: new google.maps.LatLng(51.508742, -0.120850),
+                            zoom: 5,
+                        };
+                        var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+                    }
+                </script>
+
+                <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+                <p>
+                    4846, Maduna Drive
+                </p>
+                <p>Phomolong</p>
+                <p>Tembisa</p>
+                <p>1632</p>
+
+            </div>
+            <div class="map-form">
+
+                <form action="action_page.php">
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="fname">First Name</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="lname">Last Name</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="country">Country</label>
+                        </div>
+                        <div class="col-75">
+                            <select id="country" name="country">
+                                <option value="australia">Australia</option>
+                                <option value="canada">Canada</option>
+                                <option value="usa">USA</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="subject">Subject</label>
+                        </div>
+                        <div class="col-75">
+                            <textarea id="subject" name="subject" placeholder="Write something.."
+                                style="height:200px"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+
+            </div>
+        </div>
+        <div class="empty"></div>
+    </div>
+
+
+
+
+    <div class="footer">
+        <div class="logo-div2"><img src="../images/logo-img.png" alt="Car Logo" class="logo2"></div>
+        <div class="address">
+            <div class=""> <img class="address-a" src="../images/location.png" alt="Address"></div>
+            <div class="address-t">
+                <p class="address-text"> 4846 Maduna Drive </p>
+                <p class="address-text"> Phomolong </p>
+                <p class="address-text"> Tembisa </p>
+                <p class="address-text"> 1632 </p>
+            </div>
+        </div>
+        <div class="contact">
+            <div><img class="call-img" src="../images/call-img.png" alt="Call"></div>
+            <div class="contact-us">
+                <p class="contact-t">069 309 5647</p>
+            </div>
+        </div>
+        <div class="whatsapp">
+            <div class="whatsapp-div"><img src="../images/whatsapp.jpeg" alt="whatsapp" class="whatsapp-img"> </div>
+            <div>
+                <p class="call-w">068 534 9422</p>
+                <p class="call-w1">069 309 5647</p>
+            </div>
+        </div>
+
+        <div class="email">
+            <div class="email-div"><img class="email-img" src="../images/email.webp" alt="Email"></div>
+            <div class="email-text-div">
+                <p class="email-text"><a href="mailto:trechel.mabunda@gmail.com">trechel.mabunda@gmail.com</a></p>
+            </div>
+        </div>
+
+        <div class="reviews">
+            <div><img src="../images/reviews.png" alt="Reviews" class="reviews-img"></div>
+            <div><a href="https://www.bark.com/en/za/b/paintiles-construction/En7OG/?show_reviews=true"
+                    class="review-text"> Read Bark Reviews</a></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

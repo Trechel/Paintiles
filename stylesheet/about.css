@@ -1,0 +1,84 @@
+.house{
+    margin: 0px;
+    width: 100%;
+}
+the-house{
+    display: flex;
+    flex: row;
+}
+
+.our-story{
+    display: flex;
+    flex-direction: row;
+
+}
+.empty{
+    margin-left: 100px;
+    margin-right: 100px;
+    
+}
+.story{
+    flex: 1;
+}
+.heading-story{
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: "Roboto Mono", Arial, Helvetica, sans-serif;;
+}
+.about-us{
+    text-align: justify;
+}
+.bark {
+    color: black;
+    margin-left: 5px;
+}
+
+.pics{
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+   
+}
+
+.pic{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    
+}
+.pic-img-div{
+    width: 400px;
+}
+.pic-img{
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+}
+.pic-text{
+    flex: 1;
+    margin-left: 40px;
+
+}
+.pic-text-p{
+    margin-top: 0px;
+    text-align: justify;
+}
+.pic-mine{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+}
+.pic-text-mine{
+    flex: 1;
+}
+.mine-img-div{
+    width: 200px;
+}
+.mine-img{
+    margin-left: 15px;
+    width: 100%;
+    border: none;
+    border-radius: 400px;
+    margin-top: 50px;
+}

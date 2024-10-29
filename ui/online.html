@@ -1,0 +1,370 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Quotation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=SUSE:wght@100..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../stylesheet/style.css">
+    <link rel="stylesheet" href="../stylesheet/online.css">
+
+</head>
+
+<body>
+
+    <div class="Header">
+        <div class="Logo-Div"><img src="../images/logo.png" alt="Car Logo" class="logo"></div>
+        <div class="Car-Div"><img src="../images/car.jpeg" alt="Company Logo" class="car-logo"></div>
+        <div class="nhbrc"><img src="../images/nhbrc.jpeg" alt="Nhbrc Logo" class="nhbrc-logo"></div>
+        <div class="Car1-Div"><img src="../images/car1.png" alt="Company Logo" class="car-logo2"></div>
+        <div class="Search"><input type="text" class="Search-Input" placeholder="Quick Search">
+            <button class="search-button">Search</button>
+        </div>
+    </div>
+
+    <div>
+
+
+
+
+
+
+
+
+    </div>
+    <div class="Below-Header">
+        <a href="../ui/index.html" class="Home-button"> Home</a>
+        <a href="../ui/about.html" class="Home-button"> About Us</a>
+        <a href="../ui/services.html" class="Home-button">Services</a>
+        <a href="../ui/online.html" class="Home-button">Online Quotation</a>
+        <a href="../ui/contact.html" class="Home-button"> Contact Us</a>
+
+
+
+    </div>
+
+
+    <div class="online-container">
+        <div class="div1">
+            <div class="online-text">
+                <div class="onlinetext-content">
+                    <p class="text-heading">Free Estimate</p>
+                    <p class="text-body"> Build costs can be daunting regardless of the project size. Our quotes are
+                        accurate and detailed,
+                        breaking down all costs as well as potential costs one can expect when building.
+                        There are no hidden details.
+
+                        Let us work with you to plan and find cost-effective solutions to complete your project.
+
+                        Leave us your details, tell us a bit about your project and we will contact you shortly.
+                    </p>
+                </div>
+                <div class="forms-container" id="form-container">
+                    <h4 class="text-heading">Get In Touch</h4>
+                    <div class="form-container">
+                        <p class="result-message"></p>
+                        <div class="input-field">
+                            <label>First Name:</label>
+                            <input type="text" class="form-field" name="FirstName"
+                                placeholder="Enter your first name" />
+                        </div>
+                        <div class="input-field">
+                            <label>Last Name:</label>
+                            <input type="text" class="form-field" name="LastName" placeholder="Enter your last name" />
+                        </div>
+                        <div class="input-field">
+                            <label>Select Province:</label>
+                            <select class="form-select" name="Province">
+                                <optgroup>
+                                    <option value="">Select your province</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div class="input-field">
+                            <label>Subject:</label>
+                            <input type="text" class="form-field" name="LastName" placeholder="Enter subject" />
+                        </div>
+                        <div class="input-field">
+                            <label>Message:</label>
+                            <textarea class="form-field" name="LastName"
+                                placeholder="Tell us about what you need."></textarea>
+                        </div>
+                        <div class="form-button">
+                            <div class="app-btn" onclick="submitForm()">
+                                <span>Submit</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p class="text-heading"> <span class="color-text">Step 1: </span>Let’s meet</p>
+                <p>Deciding to build is a long-term commitment and you will be working with your builder for a good few
+                    months. We encourage open
+                    and honest communication from the start. Securing a constructive working relationship for the
+                    duration of the project and beyond.
+                    We’d love the opportunity
+                    to meet you and get into the details of your build. This lets us customize our quote to your
+                    specific requirements and budget.</p>
+            </div>
+            <div>
+                <p class="text-heading"><span class="color-text">Step 2: </span>Quotation phase</p>
+                <p class="text-body">While compiling our quote, we request costings from our preferred suppliers on
+                    various elements.
+                    Such as kitchens, windows, doors, roof trusses, slab designs and so forth. Depending on project
+                    size,
+                    the process for completing a thorough quote varies from 7 – 10 working days.
+
+                    During this time we encourage you to familiarize yourself with the construction process.</p>
+            </div>
+
+        </div>
+
+        <div class="forms-container free-estimate-form" id="form-container">
+            <h4>Get Free Estimate Below</h4>
+            <div class="form-container">
+                <p class="results-message"></p>
+                <div class="input-field">
+                    <label>First Name:</label>
+                    <input type="text" class="form-field" name="firstName" placeholder="Enter your first name" />
+                </div>
+                <div class="input-field">
+                    <label>Last Name:</label>
+                    <input type="text" class="form-field" name="lastName" placeholder="Enter your last name" />
+                </div>
+                <div class="input-field">
+                    <label>Select Service:</label>
+                    <select onchange="handleServiceType(event)" class="form-select" name="service">
+                        <optgroup>
+                            <option value="">Select required service</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <div class="services-content">
+                    <div class="areas-content">
+                        <div class="input-field">
+                            <label>Areas</label>
+                            <select onchange="handleServiceArea(event)" class="form-select" name="areas">
+                                <optgroup>
+                                    <option value="">Area</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="types-content">
+                        <div class="input-field">
+                            <label>Types</label>
+                            <select class="form-select" name="types">
+                                <optgroup>
+                                    <option value="">Type</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="dimensions">
+                        <div class="input-field">
+                            <label>Total Square Meters</label>
+                            <input type="number" class="form-field" placeholder="Enter the dimensions"
+                                name="totalSquareMeters" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-button">
+                    <div class="app-btn" onclick="getQuotation()">
+                        <span>Submit</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <div class="footer">
+        <div class="logo-div2"><img src="../images/logo-img.png" alt="Car Logo" class="logo2"></div>
+        <div class="address">
+            <div class=""> <img class="address-a" src="../images/location.png" alt="Address"></div>
+            <div class="address-t">
+                <p class="address-text"> 4846 Maduna Drive </p>
+                <p class="address-text"> Phomolong </p>
+                <p class="address-text"> Tembisa </p>
+                <p class="address-text"> 1632 </p>
+            </div>
+        </div>
+        <div class="contact">
+            <div><img class="call-img" src="../images/call-img.png" alt="Call"></div>
+            <div class="contact-us">
+                <p class="contact-t">069 309 5647</p>
+            </div>
+        </div>
+        <div class="whatsapp">
+            <div class="whatsapp-div"><img src="../images/whatsapp.jpeg" alt="whatsapp" class="whatsapp-img"> </div>
+            <div>
+                <p class="call-w">068 534 9422</p>
+                <p class="call-w1">069 309 5647</p>
+            </div>
+        </div>
+
+        <div class="email">
+            <div class="email-div"><img class="email-img" src="../images/email.webp" alt="Email"></div>
+            <div class="email-text-div">
+                <p class="email-text">trechel.mabunda@gmail.com</p>
+            </div>
+        </div>
+
+        <div class="reviews">
+            <div><img src="../images/reviews.png" alt="Reviews" class="reviews-img"></div>
+            <div><a href="https://www.bark.com/en/za/b/paintiles-construction/En7OG/?show_reviews=true"
+                    class="review-text"> Read Bark Reviews</a></div>
+        </div>
+    </div>
+    <script type="text/javascript" src="../js/constants.js"></script>
+    <script type="text/javascript">
+        let currentService;
+
+        const selectFieldOptionsGroup = document.querySelector(".input-field select > optgroup");
+        const selectServiceOptionsGroup = document.querySelector(".free-estimate-form .input-field select > optgroup");
+
+        const servicesNames = Services.map((service) => { return service.name });
+
+        buildSelectOptions(Provinces, selectFieldOptionsGroup);
+        buildSelectOptions(servicesNames, selectServiceOptionsGroup);
+
+        function submitForm() {
+            const formFields = Array.from(document.querySelectorAll(".form-container input, .form-container select, .form-container textarea"));
+            const emptyFields = formFields.filter((item) => { return (item.value == "") });
+
+            if (emptyFields.length > 0)
+                handleValidation(false, emptyFields);
+            else
+                handleValidation(true, formFields);
+        }
+
+        function handleServiceType(event) {
+            const selectedService = event.target.value;
+
+            currentService = selectedService;
+
+            document.querySelector(".dimensions").style.display = "block";
+            document.querySelector(".areas-content").style.display = "block";
+            document.querySelector(".types-content").style.display = "block";
+
+            const serviceAreasGroupOptions = document.querySelector(".areas-content select > optgroup");
+            const serviceTypesGroupOptions = document.querySelector(".types-content select > optgroup");
+
+            serviceAreasGroupOptions.innerHTML = "";
+            serviceTypesGroupOptions.innerHTML = "";
+
+            let list = Services.filter((service => {
+                return (service.name == selectedService);
+            }));
+
+            buildSelectOptions(list[0].areas, serviceAreasGroupOptions);
+            buildSelectOptions(list[0].types, serviceTypesGroupOptions);
+
+        }
+
+        function handleServiceArea(event) {
+            const selectedSType = event.target.value;
+            const serviceTypesGroupOptions = document.querySelector(".types-content select > optgroup");
+
+            serviceTypesGroupOptions.innerHTML = "";
+
+            document.querySelector(".dimensions").style.display = "block";
+            document.querySelector(".types-content").style.display = "block";
+
+            let servicesTypes = Services.filter((service => {
+                return (service.name == currentService);
+            }));
+
+            servicesTypes = servicesTypes[0].types;
+
+            buildSelectOptions(servicesTypes, serviceTypesGroupOptions);
+
+        }
+
+        function handleValidation(status, formFields) {
+            document.querySelector(".result-message").textContent = status ? "" : "Please fill in all required fields";
+
+            formFields.forEach((field) => {
+                field.style.border = status ? "1px solid grey" : "1px solid red";
+            });
+        }
+
+        function buildSelectOptions(list, element) {
+            list.forEach((item) => {
+                const option = document.createElement("option");
+                option.value = item;
+                option.id = "option-item";
+                option.textContent = item;
+
+                element.appendChild(option);
+            });
+        }
+
+        async function getQuotation() {
+            const item = { totalSquareMeters: 0, firstName: "", lastName: "", service: "", types: "", areas: "" };
+            const formFields = Array.from(document.querySelectorAll(".free-estimate-form input, .free-estimate-form select"));
+            // const emptyFields = formFields.filter((item) => { return (item.value == "") });
+
+            formFields.forEach((field) => {
+                item[field.name] = field.value;
+            });
+
+            if (item.firstName == "") {
+                document.querySelector(".results-message").textContent = "Please enter your first name";
+                return;
+            }
+
+            if (item.lastName == "") {
+                document.querySelector(".results-message").textContent = "Please enter your last name";
+                return;
+            }
+
+            if (item.service == "") {
+                document.querySelector(".results-message").textContent = "Please select a service";
+                return;
+            }
+
+            if (item.areas == "") {
+                document.querySelector(".results-message").textContent = "Please select a service area";
+                return;
+            }
+
+
+            if (item.types == "") {
+                document.querySelector(".results-message").textContent = "Please select a service type";
+                return;
+            }
+
+            if (item.totalSquareMeters == "") {
+                document.querySelector(".results-message").textContent = "Please enter the total square meters";
+                return;
+            }
+
+            const response = await fetch("https://trechel.treasuremkhonto.co.za/api/quotations/getall", {
+                method: "POST",
+                body: JSON.stringify(item),
+                headers: { "Content-Type": "application/json", 'Access-Control-Allow-Origin': '*' },
+            });
+
+            if (response.status)
+                document.querySelector(".results-message").textContent = "Transaction successful.";
+            else
+                document.querySelector(".results-message").textContent = "Transaction failed.";
+
+        }
+    </script>
+
+</body>
+
+</html>

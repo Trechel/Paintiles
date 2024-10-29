@@ -1,0 +1,280 @@
+body{
+    font-family: "Roboto Mono", Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.Header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 30px;
+    
+    }
+    .Search-Input{
+        padding-right: 50px;
+        padding-left: 10px;
+        border-radius: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: rgb(230, 198, 19);
+        border: none;
+        color: white;
+        margin-left: -20;
+    }
+.Search-Input::placeholder{
+    margin-left: 20px;
+    color: white;
+    
+}
+.search-button{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 15px;
+    color: white;
+    background-color: rgb(230, 198, 19);
+    border: none;
+}
+.search-button:hover{
+    background-color:antiquewhite ;
+    color: burlywood;
+    cursor: pointer;
+}
+.Car-Div{
+    flex: 1;
+    margin-right: 0px;
+}
+.Car1-Div{
+    flex: 1;
+    margin-right: 0px;
+
+    
+}
+.car-logo{
+    width: 50%;
+}
+.car-logo2{
+    width: 50%;
+}
+.Logo-Div{
+    flex: 1;
+    margin-right: 0px;
+    
+}
+.nhbrc{
+    flex: 1;
+    margin-right: 0px;
+    
+}
+.search{
+    flex: 1;
+    
+}
+.logo{
+    width: 50%;
+}
+.nhbrc-logo{
+    width: 80%;
+}
+.Below-Header{
+    background-color: rgb(230, 198, 19);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0px;
+    padding-bottom: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+.Below-Header a{
+    padding-top: 0px;
+}
+.Home-button{
+    background-color:rgb(230, 198, 19) ;
+    margin-right: 40px;
+    border:none;
+    padding-top: 0px;
+    padding-bottom: 5px;
+    padding-left: 3px;
+    padding-right: 3px;
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.Home-button:hover{
+    background-color: antiquewhite;
+    color: burlywood;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+.intro{
+    display: flex;
+    flex-direction: column;
+    margin-left: 170px;
+    margin-right: 170px;
+    margin-bottom: 60px;
+}
+.intro-heading{
+    flex: 1;
+}
+.intro-box{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.intro-text{
+    flex: 1;
+   }
+.intro-image{       
+    width: 250px;
+    
+}
+.mcc{
+    width: 100%;
+    border-radius: 0%;
+}
+.welcome{
+    background-color:rgb(230, 198, 19) ;
+    font-weight: bold;
+    font-size: larger;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+}
+.text-intro{
+    
+    background-color: rgb(230, 198, 19);
+    color: white;
+    text-align: justify;
+    padding-left: 20px;
+    padding-right: 25px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.footer{
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    background-color:rgb(11, 132, 136) ;
+    color: white;
+}
+.logo-div2{
+    margin-left: 10px;
+    width: 300px;
+    margin-right: 100px;
+    margin-top: 65px;
+}
+.logo2{
+    width: 100%;
+}
+.address{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 0px;
+    
+}
+.contact{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 0px;
+    
+}
+.whatsapp{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    margin-right: -100px;
+    margin-top: 20px;
+    
+    
+}
+.reviews{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    
+    
+    
+}
+.address-a{
+    width: 50px;
+    margin-right: 10px;
+    margin-left: 45px;
+    margin-top: 20px;
+}
+.call-img{
+    width: 50px;
+    border-radius: 30px;
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-left: 30px;}
+.contact-t{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.whatsapp-div{
+    width: 50px;
+}
+.whatsapp-img{
+    width: 100%;
+    border-radius: 200px;
+    border: none;
+    margin-left: 35px;
+
+    
+}
+
+.call-w{
+    margin-top: 18px;
+    margin-bottom: 0px;
+}
+.call-w1{
+    margin-top: 5px;
+}
+a{
+    
+    font-weight: bold;
+    margin-top: 65px;
+    color: white;
+}
+.reviews-img{
+    width: 100px;
+    margin-left: 30px;
+    margin-top: 0;
+    margin-bottom: 0px;
+    
+    height: 88px;
+}
+.review-text{
+    margin-top: 0px;
+    
+}
+.email{
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+}
+.email-div{
+    width: 50px;
+}
+.email-img{
+    width: 100%;
+    border-radius: 200px;
+    border: none;
+    margin-top: 18px;
+    margin-left: 60px;
+}
+.email-text-div{
+    flex: 1;
+    margin-left: 0px;
+}
